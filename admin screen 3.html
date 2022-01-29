@@ -1,105 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head><title>ADMIN Screen 3</title>
-</head>
-<body>
- <style>
-body {
-  background-image: url('images.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: cover;
+<html>
+    <head>
+   <h1>Admin1</h1>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body style="background-color:powderblue;">
+    <button type="button" onclick="alert('Market is open')">Open Market</button>
+    <button type="button" onclick="alert('Market closed')" >Close Market</button>
+    <br>
+
+    <label for="searchstock">Choose a stock:</label>
+    <select name="stock" id="stock">
+    <option value="Dbs">DBS</option>
+    <option value="Hdfc">Hdfc</option>
+    <option value="Sbi">Sbi</option>
+    <option value="Axis">Axis</option>
+    </select>
+    <input type="date">
+    <input type="date">
+    <button type="button" >Show orders</button>
+
+    <br>
+    <!DOCTYPE html>
+<html>
+<style>
+    body {
+  background-image: url('background.jpg');
+}
+img {
+  filter: grayscale(100%);
+}
+table, th, td {
+  border:1px solid black;
 }
 </style>
+<body>
 
-<h1>Admin Screen 3</h1>
-<input type="button" value="Open Market" />
-<input type="button" value="Close Market" />
-<form>
-<label> Select Stocks</label>
-<select>
-<option value = "DBS">DBS
-</option>
-<option value = "HDFC"> HDFC
-</option>
-<option value = "AXIS"> AXIS
-</option>
-<option value = "HCL"> HCL
-</option>
-<option value = "ICICI"> ICICI
-</option>
-<option value = "ITC"> ITC
-</option>
-<option value = "TCS"> TCS
-</option>
-<option value = "Adani Total gas"> Adani Total gas
-</option>
-<option value = "Adani Green energy"> Adani Green Energy
-</option>  
-<option value = "Wipro"> Wipro
-</option>
-<option value = "Tata Steel"> Tata Steel
-</option>
-</select>
-<input type = "date">  
-<button type="submit" name="btn">From date</button>
-<input type = "date">  
-<button type="submit" name="btn">To date</button>
-</form>
-<input type="button" value="Show Orders" />
-<TABLE BORDER="5"    WIDTH="80%"    CELLPADDING="9" CELLSPACING="3">
-   <TR>
-      <TH>s.no</TH>
-<TH>Stocks name</TH>
-<TH>Order qty</TH>
-<TH>order type</TH>
-<TH>executed qty</TH>
-<TH>price</TH>
-<TH>Order Status</TH>
-<TH>Order date</TH>
-   </TR>
-<tr><Th></Th>
-<Th></Th>
-<Th></Th>
-<Th></Th>
-<Th></Th>
-<TH></TH>
-<TH></TH>
-<TH></TH></tr>
-<tr><TH></TH>
-<TH></TH>
-<TH></TH>
-<TH></TH>
-<TH></TH>
-<TH></TH>
-<TH></TH>
-<TH></TH></tr>
-<tr><TH></TH>
-<TH></TH>
-<TH></TH>
-<TH></TH>
-<TH></TH>
-<TH></TH>
-<TH></TH>
-<TH></TH></tr>
-<tr><TH></TH>
-<TH></TH>
-<TH></TH>
-<TH></TH>
-<TH></TH>
-<TH></TH>
-<TH></TH>
-<TH></TH></tr>
-   <TR ALIGN="CENTER">
+
+
+<table style="width:100%">
+  <tr>
+    <th>Sno</th>
+    <th>Stockname</th>
+    <th>OrderQuantity</th>
+    <th>Order Type</th>
+    <th>Executed Quantity</th>
+    <th>Price</th>
+    <th>Order status</th>
+    <th>Order date</th>
+  </tr>
+  <br>
+  <tr>
+    <td>1 </td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>2 </td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
      
-   </TR>
-</TABLE>
-<TABlE BORDER="2">
-<tr>
-<th>Execution Qty</th></tr>
-<Tr><th></th></tr></TABLE>
-<TABLE BORDER="2">
-<tr><th>Execution Price</th></tr>
-<tr><th><th></tr></TABLE>
-<input type="button" value="Execute Orders" />
-</html>
+  </tr>
+  <tr>
+    <td>3 </td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+<button type="button" >Execution Quantity</button>
+
+<button type="button" >Execution Price</button>
+
+<button type="button" >Execute Orders</button>
