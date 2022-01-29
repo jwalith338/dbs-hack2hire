@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="test.css">
+    <title></title>
+    <style>
+.bg{
+  background-image:url("campus Hack2Hire Teams Banner-01.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+</style>
+  </head>
+  <body class="bg">
+    <h1>Thanks for ordering.</h1>
+    <h1>your order is successful!</h1>
+  </body>
+</html>

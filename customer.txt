@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="test.css">
+    <title>CUSTOMER SCREEN</title>
+<style>
+   body{
+  font-family:Airal;
+  font-size:20pt;
+}
+h1{
+  text-align: center;
+}
+p{
+  color:yellow;
+}
+</style>
+
+
+  </head>
+  <body class="bg">
+    <h1>Order Book system</h1>
+    <p>Looking for some safe place to invest all your savings??</p>
+    <p>It's right here!!</p>
+    <form>
+      <label for="Search Stock"><b>Search Stock</b></label><br>
+      <select >
+        <option value="DBS">DBS</option>
+        <option value="NTT">NTT</option>
+        <option value="wIPRO">WIPRO</option>
+        <option value="APPLE">APPLE</option>
+        <option value="Amazon">AMAZON</option>
+      </select>
+      <br><br>
+      <script type="text/javascript">
+        function EnableDisableTextBox(type){
+          var selectedValue=type.options[type.selectedIndex].value;
+          var txt=document.getElementById("txt");
+          txt.disabled=selectedValue==2?false:true;
+          if(!txt.disabled){
+            txt.focus();
+          }
+
+        }
+
+      </script>
+      <span><b>Order Type</b></span><br>
+      <select id="type" onchange="EnableDisableTextBox(this)" >
+        <option value="1">MARKET</option>
+        <option value="2">LIMIT</option>
+      </select>
+      <br><br>
+      <label for="price"><b>Price</b></label><br>
+      <input type="number" id="txt" disabled="disabled"/>
+      <h4>Quantity</h4>
+      <input type="number" min="0"  value="Quantity">
+      <br><br>
+      <a href="success.html"><input type="button" value="Place Order"></a>
+    </form>
+
+  </body>
+</html>
